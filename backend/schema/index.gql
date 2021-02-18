@@ -1,0 +1,11 @@
+type Bookmark {
+  title: String!
+  link: String!
+  docId: String!
+}
+type Query {
+  bookmarks: [Bookmark]!
+}
+type Mutation {
+  addBookmark(title: String!, link: String!): Bookmark!
+}
